@@ -1,0 +1,62 @@
+:root {
+  --accent_color: #F7654A;
+  --dark_color: #404149;
+  --gray_color: #999;
+  --white_color: #fff;
+  --bg_color: #E5E5E5;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+.text_h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.text_h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.text_h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.text_h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+/* 
+font-family: 'Open Sans', sans-serif;
+*/
+
+.header_title {
+}
+.logo {
+}
+.burger {
+}
+.burger_line {
+}
+.title {
+}
+.subtitle {
+}

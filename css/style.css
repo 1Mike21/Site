@@ -1,3 +1,4 @@
+/* Цвета */
 :root {
   --accent_color: #F7654A;
   --dark_color: #404149;
@@ -16,47 +17,95 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
+/* Стили для текста */
 .text_h2{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 36px;
   text-transform: uppercase;
 }
-.text_h2{
+.text_h3{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  text-transform: uppercase;
+  font-size: 24px;
 }
-.text_h2{
+.text_h4{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 36px;
-  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 2%;
 }
-.text_h2{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  text-transform: uppercase;
+.text_p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.text_p_reviews{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.header {
+  min-height: 740px;
+  background: url(../img/first_screen_bg.jpg) no-repeat;
+  background-size: cover;  
 }
 .container {
   max-width: 1110px;
   margin: 0 auto;
 }
-/* 
-font-family: 'Open Sans', sans-serif;
-*/
 
 .header_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  margin-bottom: 112px;
 }
 .logo {
+  width: 60px;
+  height: 60px;
 }
 .burger {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--accent_color);
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .burger_line {
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+.burger_line:last-child {
+  margin-bottom: 0;
 }
 .title {
+  color: var(--white_color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 95px;
+  text-transform: uppercase;
+  font-size: 64px;
+  text-align: center;
+  max-width: 734px;
+  margin: 0 auto 17px;
 }
 .subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--white_color);
+  max-width: 734px;
+  text-align: center;
+  margin: 0 auto;
 }

@@ -16,30 +16,34 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
 /* Стили для текста */
-.text_h2{
+.text_h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 36px;
   text-transform: uppercase;
 }
-.text_h3{
+.text_h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 24px;
 }
-.text_h4{
+.text_h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 21px;
   letter-spacing: 2%;
 }
-.text_p{
+.text_p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +117,9 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+/* Раздел о нас */
 .about {
+  padding-top: 250px;
   min-width: 1080px;
   position: relative;
 }
@@ -169,4 +175,114 @@ body {
     grid: repeat(4,1fr)/repeat(1,1fr);
   }
 }
+/* Раздел с примерами проектов */
 
+.project-h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about_flex {
+  display: flex;
+}
+.about_flex_item {
+  max-width: 350px;
+  margin-right: 30px;
+}
+.about_flex_item:last-child {
+  margin-right: 0;
+}
+.project_img {
+  margin-bottom: 45px;
+}
+.line {
+  width: 56px;
+  height: 6px;
+  background-color: var(--accent_color);
+  margin-bottom: 15px;
+}
+.project_h3 {
+  color: var(--dark_color);
+  margin-bottom: 13px;
+}
+.project_p {
+  color: var(--gray_color);
+}
+@media screen and (max-width: 1280px) {
+  .about {
+    padding: 450px 15px 110px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .about_flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_flex_item {
+    margin-right: 0;
+    margin-bottom: 30px;  
+  }
+  .about_flex_item:last-child {
+    margin-bottom: 0;
+  }
+}
+.request {
+  background-color: var(--accent_color);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.request_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request_flex_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white_color);
+}
+.request_title {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 71px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.request_subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.send_request {
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px; 
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-family: 'Oswald', sans-serif;
+  padding: 14px 30px;
+}
+.request_icon {
+  margin-right: 15px;
+}
+@media screen and (max-width: 1280px) {
+  .request {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .request_flex {
+    flex-wrap: wrap;
+  }
+}

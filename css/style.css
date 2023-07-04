@@ -108,12 +108,6 @@ body {
   max-width: 734px;
   margin: 0 auto 17px;
 }
-@media  screen and (max-width: 380px) {
-  .title {
-    font-size: 46px;
-    line-height: 64px;
-  }
-}
 .subtitle {
   font-size: 18px;
   text-transform: uppercase;
@@ -168,22 +162,8 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-@media screen and (max-width: 1280px) {
-  .about_grid {
-    grid-template: repeat(2,1fr)/repeat(2,1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .info {
-    position: relative;
-    padding: 30px 0;
-  }
-  .about_grid {
-    grid-template: repeat(4,1fr)/repeat(1,1fr);
-  }
-}
-/* Раздел с примерами проектов */
 
+/* Раздел с примерами проектов */
 .project-h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -213,28 +193,6 @@ body {
 }
 .project_p {
   color: var(--gray_color);
-}
-@media screen and (max-width: 1280px) {
-  .about {
-    padding: 450px 15px 110px 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about {
-    padding-top: 150px;
-    padding-bottom: 80px;
-  }
-  .about_flex{
-    flex-direction: column;
-    align-items: center;
-  }
-  .about_flex_item {
-    margin-right: 0;
-    margin-bottom: 30px;  
-  }
-  .about_flex_item:last-child {
-    margin-bottom: 0;
-  }
 }
 .request {
   background-color: var(--accent_color);
@@ -282,17 +240,7 @@ body {
 .request_icon {
   margin-right: 15px;
 }
-@media screen and (max-width: 1280px) {
-  .request {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .request_flex {
-    flex-wrap: wrap;
-  }
-}
+
 /* Раздел с услугами */
 .services {
   padding: 150px 0;
@@ -323,39 +271,13 @@ body {
 .services_icon {
   margin: 0 auto 21px;
 }
-@media screen and (max-width: 1280px) {
-  .services {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .services_grid {
-    grid-template: repeat(3,1fr)/repeat(2,1fr);
-  }
-  .services_grid_item {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .services_grid {
-    grid-template-columns: repeat(1,1fr);
-  }
-}
 .portfolio_grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   justify-items: center;
   gap: 0;
 }
-@media screen and (max-width: 1280px) {
-  .portfolio_grid {
-    grid-template-columns: repeat(4,1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .portfolio_grid {
-    grid-template-columns: repeat(1,1fr);
-  }
-}
+
 /* Раздел с вопросами */
 .question {
   padding-top: 150px;
@@ -391,11 +313,7 @@ body {
 .question_title.close + .question_p {
   display: none;
 }
-@media screen and (max-width: 1280px) {
-  .question {
-    padding: 150px 15px 110px;
-  }
-}
+
 /* Раздел партнеры */
 .partners {
   background-color: var(--dark_color);
@@ -419,19 +337,6 @@ body {
 }
 .partners_flex_item:nth-child(5n) {
   margin-right: 0;
-}
-@media screen and (max-width: 1280px) {
-  .partners_flex {
-    justify-content: center;
-  }
-  .partners_flex_item {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .partners_flex_item:nth-child(5n) {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
 }
 .reviews {
   padding: 150px 0 142px;
@@ -460,16 +365,148 @@ body {
 .reviews_author_accent {
   color: var(--accent_color);
 }
+.contacts {
+  padding: 100px 0 150px;
+}
+.contacts_title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.contacts_grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  justify-content: space-between;
+}
+.contacts_grid_item {
+  text-align: center;
+  max-width: 255px;
+}
+.contacts_icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 13px;
+}
+.contacts_subtitle {
+  color: var(--gray_color);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.contacts_text {
+  text-transform: uppercase;
+}
+.contacts_email {
+  color: var(--accent_color);
+}
+.footer {
+  background-color: var(--dark_color);
+  padding: 30px 0;
+  color: var(--white_color);
+}
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* Медиа-запросы */
 @media screen and (max-width: 1280px) {
+  .about_grid {
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+  }
+  .about {
+    padding: 450px 15px 110px 15px;
+  }
+  .request {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services_grid {
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+  }
+  .services_grid_item {
+    width: 100%;
+  }
+  .portfolio_grid {
+    grid-template-columns: repeat(4,1fr);
+  }
+  .question {
+    padding: 150px 15px 110px;
+  }
+  .partners_flex {
+    justify-content: center;
+  }
+  .partners_flex_item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .partners_flex_item:nth-child(5n) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   .reviews {
     padding: 100px 15px;
   }
   .reviews_grid {
     grid-template-columns: repeat(2,1fr);
-  }  
+  }
+  .contacts_grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .contacts_grid_item {
+    max-width: 100%;
+  }
+  .footer {
+    padding: 30px 15px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .about_flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_flex_item {
+    margin-right: 0;
+    margin-bottom: 30px;  
+  }
+  .about_flex_item:last-child {
+    margin-bottom: 0;
+  }
+  .info {
+    position: relative;
+    padding: 30px 0;
+  }
+  .about_grid {
+    grid-template: repeat(4,1fr)/repeat(1,1fr);
+  }
+  .request_flex {
+    flex-wrap: wrap;
+  }
+  .services_grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .portfolio_grid {
+    grid-template-columns: repeat(1,1fr);
+  }
   .reviews_grid {
     grid-template-columns: repeat(1,1fr);
   }    
+  .contacts_grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+@media  screen and (max-width: 380px) {
+  .title {
+    font-size: 46px;
+    line-height: 64px;
+  }
 }

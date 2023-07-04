@@ -291,29 +291,11 @@ body {
   color: var(--accent_color);
   margin-bottom: 23px;
 }
-.question_title.close {
-  margin-bottom: 31px;
-}
 .question_p {
   margin-bottom: 40px;
   color: var(--gray_color);
   max-width: 730px;
 }
-.question_title.open::before, .question_title.close::before {
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: url(../img/arrow_icon.svg) no-repeat center;
-  margin-right: 14px;
-}
-.question_title.open::before {
-  transform: rotate(-90deg);
-}
-.question_title.close + .question_p {
-  display: none;
-}
-
 /* Раздел партнеры */
 .partners {
   background-color: var(--dark_color);
@@ -395,6 +377,10 @@ body {
 .contacts_text {
   text-transform: uppercase;
 }
+.contacts_text a {
+  text-decoration: none;
+  color: inherit;
+}
 .contacts_email {
   color: var(--accent_color);
 }
@@ -409,6 +395,9 @@ body {
 }
 /* Медиа-запросы */
 @media screen and (max-width: 1280px) {
+  .header_title {
+    padding: 0 15px;
+  }
   .about_grid {
     grid-template: repeat(2,1fr)/repeat(2,1fr);
   }

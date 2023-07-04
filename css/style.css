@@ -41,7 +41,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 21px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .text_p {
   font-family: 'Open Sans', sans-serif;
@@ -108,6 +108,12 @@ body {
   max-width: 734px;
   margin: 0 auto 17px;
 }
+@media  screen and (max-width: 380px) {
+  .title {
+    font-size: 46px;
+    line-height: 64px;
+  }
+}
 .subtitle {
   font-size: 18px;
   text-transform: uppercase;
@@ -120,7 +126,7 @@ body {
 /* Раздел о нас */
 .about {
   padding-top: 250px;
-  min-width: 1080px;
+  min-height: 1080px;
   position: relative;
 }
 .info {
@@ -164,15 +170,16 @@ body {
 }
 @media screen and (max-width: 1280px) {
   .about_grid {
-    grid: repeat(2,1fr)/repeat(2,1fr);
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
   }
 }
 @media screen and (max-width: 768px) {
   .info {
     position: relative;
+    padding: 30px 0;
   }
   .about_grid {
-    grid: repeat(4,1fr)/repeat(1,1fr);
+    grid-template: repeat(4,1fr)/repeat(1,1fr);
   }
 }
 /* Раздел с примерами проектов */
@@ -286,3 +293,51 @@ body {
     flex-wrap: wrap;
   }
 }
+/* Раздел с услугами */
+.services {
+  padding: 150px 0;
+}
+.section_title, .services_h4 {
+  color: #000;
+  text-align: center;
+}
+.services_h4 {
+  margin: 0 auto;
+  min-width: 172px;
+  text-transform: uppercase;
+} 
+.section_title {
+  margin-bottom: 55px;
+}
+.services_grid {
+  display: grid;
+  grid-template: repeat(2,1fr)/repeat(3,1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.services_grid_item {
+  padding: 59px 0;
+  width: 350px;
+  background-color: #F7F7F7;
+}
+.services_icon {
+  margin: 0 auto 21px;
+}
+@media screen and (max-width: 1280px) {
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services_grid {
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+  }
+  .services_grid_item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services_grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+

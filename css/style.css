@@ -356,3 +356,43 @@ body {
     grid-template-columns: repeat(1,1fr);
   }
 }
+/* Раздел с вопросами */
+.question {
+  padding-top: 150px;
+  padding-bottom: 110px;
+}
+.question .section_h2 {
+  margin-bottom: 50px;
+}
+.question_h3 {
+  text-transform: uppercase;
+  color: var(--accent_color);
+  margin-bottom: 23px;
+}
+.question_h3.close {
+  margin-bottom: 31px;
+}
+.question_p {
+  margin-bottom: 40px;
+  color: var(--gray_color);
+  min-width: 730px;
+}
+.question_h3.open::before, .question_h3.close::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/arrow_icon.svg) no-repeat center;
+  margin-right: 14px;
+}
+.question_h3.open::before {
+  transform: rotate(-90deg);
+}
+.question_h3.close + .question_p {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .question {
+    padding: 150px 15px 110px;
+  }
+}

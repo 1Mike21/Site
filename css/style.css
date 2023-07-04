@@ -361,23 +361,23 @@ body {
   padding-top: 150px;
   padding-bottom: 110px;
 }
-.question .section_h2 {
+.question .section_title {
   margin-bottom: 50px;
 }
-.question_h3 {
+.question_title {
   text-transform: uppercase;
   color: var(--accent_color);
   margin-bottom: 23px;
 }
-.question_h3.close {
+.question_title.close {
   margin-bottom: 31px;
 }
 .question_p {
   margin-bottom: 40px;
   color: var(--gray_color);
-  min-width: 730px;
+  max-width: 730px;
 }
-.question_h3.open::before, .question_h3.close::before {
+.question_title.open::before, .question_title.close::before {
   content: '';
   display: inline-block;
   width: 15px;
@@ -385,14 +385,91 @@ body {
   background: url(../img/arrow_icon.svg) no-repeat center;
   margin-right: 14px;
 }
-.question_h3.open::before {
+.question_title.open::before {
   transform: rotate(-90deg);
 }
-.question_h3.close + .question_p {
+.question_title.close + .question_p {
   display: none;
 }
 @media screen and (max-width: 1280px) {
   .question {
     padding: 150px 15px 110px;
   }
+}
+/* Раздел партнеры */
+.partners {
+  background-color: var(--dark_color);
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+.partners_title {
+  color: var(--white_color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.partners_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.partners_flex_item {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  max-width: 170px;
+}
+.partners_flex_item:nth-child(5n) {
+  margin-right: 0;
+}
+@media screen and (max-width: 1280px) {
+  .partners_flex {
+    justify-content: center;
+  }
+  .partners_flex_item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .partners_flex_item:nth-child(5n) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.reviews {
+  padding: 150px 0 142px;
+}
+.reviews_title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.reviews_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+}
+.reviews_card {
+  background-color: #F7F7F7;
+  padding: 28px 30px;
+  margin-bottom: 35px;
+}
+.reviews_quotes {
+  color: var(--accent_color);
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: -40px;
+}
+.reviews_author_accent {
+  color: var(--accent_color);
+}
+@media screen and (max-width: 1280px) {
+  .reviews {
+    padding: 100px 15px;
+  }
+  .reviews_grid {
+    grid-template-columns: repeat(2,1fr);
+  }  
+}
+@media screen and (max-width: 768px) {
+  .reviews_grid {
+    grid-template-columns: repeat(1,1fr);
+  }    
 }
